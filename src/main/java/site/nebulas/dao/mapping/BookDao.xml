@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.nebulas.dao.BookDao">
+
+
+	<select id="bookQueryByParam" resultType="Book">
+		select book_id bookID,book_name bookName,book_author bookAuthor,book_desc bookDesc,publishing_company publishingCompany,price price,publishing_year publishingYear,book_pic bookPic,book_url bookURL,category_id categoryID,is_hot isHot,is_recommend isRecommend,is_top isTop,update_time updateTime
+		 from book
+		
+		 <where>
+		 	<if test="isHot != null ">
+		 		is_hot = #{isHot}
+		 	</if>
+		 	<if test="isRecommend != null">
+		 		and is_recommend = #{isRecommend}
+		 	</if>
+		 	<if test="isTop != null">
+		 		and is_top = #{isTop}
+		 	</if>
+		 	<if test="categoryID != null">
+		 		and category_id = #{categoryID}
+		 	</if>
+		 </where>
+		 
+		 	ORDER BY update_time DESC
+		 
+		 
+		 <choose>
+		 	<when test="limitNum != null and limitBegin != null">
+		 		limit #{limitBegin},#{limitNum}
+		 	</when>
+		 	<when test="limitNum != null and limitBegin == null">
+		 		limit #{limitNum}
+		 	</when>
+		 </choose>
+	
+	</select>
+	
+	
+	<insert id="insert">
+		insert into book (book_name,book_author,book_desc,publishing_company,price,publishing_year,book_pic,book_url,category_id,is_hot,is_recommend,is_top,update_time) 
+		values (#{bookName},#{bookAuthor},#{bookDesc},#{publishingCompany},#{price},#{publishingYear},#{bookPic},#{bookURL},#{categoryID},#{isHot},#{isRecommend},#{isTop},#{updateTime})
+	</insert>
+	
+	<update id="update">
+		update book
+		<set>
+			<if test="bookName !=null and bookName !='' ">
+				book_name = #{bookName},
+			</if>
+			<if test="bookAuthor !=null and bookAuthor !='' ">
+				book_author = #{bookAuthor},
+			</if>
+			<if test="bookDesc !=null and bookDesc !='' ">
+				book_desc = #{bookDesc},
+			</if>
+			<if test="publishingCompany !=null and publishingCompany !='' ">
+				publishing_company = #{publishingCompany},
+			</if>
+			<if test="price !=null and price !='' ">
+				price = #{price},
+			</if>
+			<if test="publishingYear !=null and publishingYear !='' ">
+				publishing_year = #{publishingYear},
+			</if>
+			<if test="bookPic !=null and bookPic !='' ">
+				book_pic = #{bookPic},
+			</if>
+			<if test="bookURL !=null and bookURL !='' ">
+				book_url = #{bookURL},
+			</if>
+			<if test="categoryID !=null and categoryID !='' ">
+				category_id = #{categoryID},
+			</if>
+			<if test="isHot != null ">
+				is_hot = #{isHot},
+			</if>
+			<if test="isRecommend != null ">
+				is_recommend = #{isRecommend},
+			</if>
+			<if test="isTop != null ">
+				is_top = #{isTop},
+			</if>
+			<if test="updateTime !=null and updateTime !='' ">
+				update_time = #{updateTime}
+			</if>
+		</set>
+		where book_id = #{bookID}
+	</update>
+	
+	<delete id="delete">
+		delete from book
+		where book_id = #{bookID}
+	</delete>
+</mapper>
