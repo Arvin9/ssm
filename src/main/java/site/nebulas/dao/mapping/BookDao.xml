@@ -4,35 +4,16 @@
 
 
 	<select id="bookQueryByParam" resultType="Book">
-		select book_id bookID,book_name bookName,book_author bookAuthor,book_desc bookDesc,publishing_company publishingCompany,price price,publishing_year publishingYear,book_pic bookPic,book_url bookURL,category_id categoryID,is_hot isHot,is_recommend isRecommend,is_top isTop,update_time updateTime
+		select book_id bookID,book_name bookName
 		 from book
 		
 		 <where>
-		 	<if test="isHot != null ">
-		 		is_hot = #{isHot}
-		 	</if>
-		 	<if test="isRecommend != null">
-		 		and is_recommend = #{isRecommend}
-		 	</if>
-		 	<if test="isTop != null">
-		 		and is_top = #{isTop}
-		 	</if>
 		 	<if test="categoryID != null">
 		 		and category_id = #{categoryID}
 		 	</if>
 		 </where>
 		 
-		 	ORDER BY update_time DESC
-		 
-		 
-		 <choose>
-		 	<when test="limitNum != null and limitBegin != null">
-		 		limit #{limitBegin},#{limitNum}
-		 	</when>
-		 	<when test="limitNum != null and limitBegin == null">
-		 		limit #{limitNum}
-		 	</when>
-		 </choose>
+
 	
 	</select>
 	

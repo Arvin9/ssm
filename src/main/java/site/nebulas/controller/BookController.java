@@ -34,7 +34,8 @@ public class BookController {
 	
 	@RequestMapping("book")
 	public ModelAndView operationLog(){
-		ModelAndView modelAndView = new ModelAndView("book");		
+		ModelAndView modelAndView = new ModelAndView("book");
+		System.out.println(bookService.bookQueryByParam(null).get(0).getBookName());
 		return modelAndView;
 	}
 	
