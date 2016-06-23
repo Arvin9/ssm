@@ -10,7 +10,7 @@
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#"> 
-			 <span class="glyphicon glyphicon-tags"></a> <a class="navbar-brand" href="#">文库后台管理</a>
+			 <span class="glyphicon glyphicon-tags"></a> <a class="navbar-brand" href="#">图书信息管理系统</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -37,10 +37,10 @@
 				<!-- <li><a href="listCountLog">插件日志</a></li> -->
 				
 
-				<li><a href="#">书城</a>
+				<li><a href="#">图书</a>
 					<ul class="nav nav-second-level">
 						<li><a href="book">图书</a></li>
-						<li><a href="category">类别</a></li>
+						
 						
 					</ul>
 				</li>

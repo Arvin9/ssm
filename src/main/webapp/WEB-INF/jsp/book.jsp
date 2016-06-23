@@ -12,8 +12,6 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
 
-
-
 <jsp:include page="include/header.jsp" />
 
 
@@ -211,6 +209,186 @@
 
 
 	<jsp:include page="include/footer.jsp" />
-	
+	<script type="text/javascript">
+		$(function(){
+			Item.init();
+			 $('#table_id').bootstrapTable({
+	                method: 'get',
+	                url: '${ctx}/bookQueryByParam',
+	                cache: false,
+	                height: 600,
+	                striped: true,
+	                pagination: true,
+	                pageSize: 20,
+	                pageList: [5,10, 25, 50, 100, 200],
+	                showExport: true,
+	                exportDataType:'all',
+	                exportTypes:['json', 'xml', 'csv', 'txt', 'sql', 'excel'],
+	                contentType: "application/x-www-form-urlencoded",
+	                search: true,
+	                showColumns: true,
+	                showRefresh: true,
+	                minimumCountColumns: 2,
+	                clickToSelect: true,
+	                toolbar : '#tb',
+	                singleSelect : false,
+	                columns: [{
+	                    field: 'state',
+	                    checkbox: true
+	                },{
+	                    field: 'bookID',
+	                    title: 'ID',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
+	                    
+	                }, {
+	                    field: 'bookName',
+	                    title: '书名',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
+	                }]
+	            });
+		});
+		
+		var Item = {
+				commitUrl : '',
+				init : function() {
+					$("#wrap").dialog({title:"操作",autoOpen: false});
+					$("#wrapOfAddBatch").dialog({title:"操作",autoOpen: false});
+					
+					$('#add').click (function(){
+						$("#file").attr("required","required");
+						$("#wrap").dialog({title:"新增",autoOpen: false});
+						Item.commitUrl = '${ctx}/addBook';
+						$('#form').form("clear");
+						
+						$('#categoryID').val("1");
+						$('#isHot').val("1");
+						$('#isRecommend').val("1");
+						$('#isTop').val("1");
+						$('#bookFileOrURL').val("1");
+						
+						$('#id').hide();
+						$("#wrap").dialog("open");
+					});
+					$('#addBatch').click (function(){
+						$("#file").attr("required","required");
+						$("#wrapOfAddBatch").dialog({title:"批量新增",autoOpen: false});
+						Item.commitUrl = '${ctx}/addBookBatch';
+						$('#formBatch').form("clear");
+						$("#wrapOfAddBatch").dialog("open");
+					});
+					$('#updateBtn').click (function(){
+						
+						$("#file").removeAttr("required");
+						$("#wrap").dialog({title:"修改",autoOpen: false});
+						 var selections = $('#table_id').bootstrapTable('getSelections');
+						 if(selections.length==0){
+							 $.messager.popup('请选择要修改的记录');
+							 return;
+						 }
+						 var row = selections[0];
+						 Item.commitUrl = '${ctx}/updateBook';
+						$('#form').form("clear");
+						
+						$('#bookPicFile').removeAttr("required");
+						$('#bookFileOrURL').removeAttr("required");
+						
+						$('#id').show();
+						$('#form').form("load",row);
+						$('#bookFileOrURL').val("1");
+						 
+						var bookImg = $('#bookImg').val();
+						$('#img').attr("src","http://"+bookImg);
+						
+						$("#wrap").dialog("open");
+					});
+					$('#removeBtn').click (function(){
+						$("#file").removeAttr("required");
+						$("#wrap").dialog({title:"删除",autoOpen: false});
+						 var selections = $('#table_id').bootstrapTable('getSelections');
+						 if(selections.length==0){
+							 $.messager.popup('请选择要删除的记录');
+							 return;
+						 }
+						 var row = selections[0];
+						 Item.commitUrl = '${ctx}/deleteBook';
+						$('#form').form("clear");
+						
+						$('#bookPicFile').removeAttr("required");
+						$('#bookFileOrURL').removeAttr("required");
+						$('#bookFileOrURL').val("1");
+						$('#id').show();
+						$('#form').form("load",row);
+						$("#wrap").dialog("open");
+					});
+					
+				},
+				save : function() {
+					$('#form').form({
+						url : Item.commitUrl,
+						 onSubmit:function(){ 
+							 var result = $(this).validate().form();
+							 if(!result){
+								 return false;
+							 }
+					        }, 
+						success:function(data){ 
+							data = JSON.parse(data);
+							 $("#wrap").dialog("close");
+							if(data.ret =="0"){
+								 $('#table_id').bootstrapTable('refresh');
+								 $.messager.popup("success!");
+							}else{
+								$.messager.alert("提示", "failed!");
+							}
+						} 
+					});
+					if(!$('#url').val()=='' && !$('#url').val().startsWith('http')){
+						$.messager.popup('url必须是http/https开头！');
+						return false;
+					}
+					if(Item.commitUrl=='${ctx}/deleteBook'){
+						$.messager.confirm("警告", "确定要删除 吗!", function() {
+							$('#form').form('submit');
+						});
+					}else if(Item.commitUrl=='${ctx}/updateBook'){
+						$.messager.confirm("警告", "确定要更新吗!", function() {
+							$('#form').form('submit');
+						});
+					}else{
+						$('#form').form('submit');
+					}
+					
+				},
+				uploading : function() {
+					$('#formBatch').form({
+						url : Item.commitUrl,
+						 onSubmit:function(){ 
+							 var result = $(this).validate().form();
+							 if(!result){
+								 return false;
+							 }
+					        }, 
+						success:function(data){ 
+							data = JSON.parse(data);
+							 $("#wrapOfAddBatch").dialog("close");
+							if(data.ret =="0"){
+								 $('#table_id').bootstrapTable('refresh');
+								 $.messager.popup("success!");
+							}else{
+								$.messager.alert("提示", "failed!");
+							}
+						} 
+					});
+				
+					$('#formBatch').form('submit');
+				}
+		}
+	</script>	
 </body>
 </html>
