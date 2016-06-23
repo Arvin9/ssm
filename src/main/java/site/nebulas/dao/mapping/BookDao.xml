@@ -4,8 +4,16 @@
 
 
 	<select id="bookQueryByParam" resultType="Book">
-		select book_id bookID,book_name bookName
-		 from book
+		select 
+			book_id bookID,
+			serial_number serialNumber,
+			book_name bookName,
+			book_author bookAuthor,
+			book_concern bookConcern,
+			book_edition bookEdition,
+			book_price bookPrice
+			
+		from book
 	</select>
 	
 	

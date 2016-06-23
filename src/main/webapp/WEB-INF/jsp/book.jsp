@@ -241,8 +241,15 @@
 	                    align: 'center',
 	                    valign: 'middle',
 	                    sortable : true,
-	                    visible : true
+	                    visible : false
 	                    
+	                }, {
+	                    field: 'serialNumber',
+	                    title: '编号',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
 	                }, {
 	                    field: 'bookName',
 	                    title: '书名',
@@ -250,6 +257,41 @@
 	                    valign: 'middle',
 	                    sortable : true,
 	                    visible : true
+	                }, {
+	                    field: 'bookAuthor',
+	                    title: '作者',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
+	                }, {
+	                    field: 'bookConcern',
+	                    title: '出版社',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
+	                }, {
+	                    field: 'bookEdition',
+	                    title: '版次',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : true
+	                }, {
+	                    field: 'bookPrice',
+	                    title: '定价',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : false
+	                }, {
+	                    field: 'bookDesc',
+	                    title: '备注',
+	                    align: 'center',
+	                    valign: 'middle',
+	                    sortable : true,
+	                    visible : false
 	                }]
 	            });
 		});

@@ -1,10 +1,7 @@
 package site.nebulas.controller;
 
 
-import java.io.InputStream;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+
 
 import javax.annotation.Resource;
 
@@ -21,9 +18,6 @@ import site.nebulas.service.BookService;
 
 
 
-
-
-
 @Controller
 public class BookController {
 	Logger log=LoggerFactory.getLogger(getClass());
@@ -35,7 +29,6 @@ public class BookController {
 	@RequestMapping("book")
 	public ModelAndView operationLog(){
 		ModelAndView modelAndView = new ModelAndView("book");
-		System.out.println(bookService.bookQueryByParam(null).get(0).getBookName());
 		return modelAndView;
 	}
 	

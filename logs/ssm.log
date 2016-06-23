@@ -6399,4 +6399,403 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 47; columnNumber: 54; cvc-
  [INFO] [2016-06-23 09:23:03][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
  [INFO] [2016-06-23 09:23:03][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 2041 ms
  [WARN] [2016-06-23 09:27:55][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/category] in DispatcherServlet with name 'SpringMVC'
+ [INFO] [2016-06-23 10:06:01][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 09:23:01 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:01][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 09:22:59 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:09][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:06:10][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:06:10 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:06:11][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:06:11][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2336 ms
+ [INFO] [2016-06-23 10:06:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:06:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:12 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:06:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:06:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:06:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:06:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:06:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 3204 ms
+ [INFO] [2016-06-23 10:06:20][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:12 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:20][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:06:10 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:25][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:06:25][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:06:25 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:26][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:06:26][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:06:26][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:26][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 883 ms
+ [INFO] [2016-06-23 10:06:26][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:06:26][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:26 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:26][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:06:26][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:06:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:06:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:06:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:06:27][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 834 ms
+ [INFO] [2016-06-23 10:06:32][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:26 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:32][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:06:25 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:06:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:06:39 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:06:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:06:40][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:06:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:41][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1935 ms
+ [INFO] [2016-06-23 10:06:41][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:06:41][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:41 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:41][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:06:41][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:06:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:06:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:06:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:06:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:06:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1255 ms
+ [INFO] [2016-06-23 10:06:52][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:06:41 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:06:52][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:06:39 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:07:00][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:07:00][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:07:00 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:07:00][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:07:00][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:07:00][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 903 ms
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:07:01 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:07:01][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:07:01][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:07:01][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 817 ms
+ [INFO] [2016-06-23 10:07:06][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:07:01 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:07:06][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:07:00 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:07:15][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:07:15][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:07:15 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:07:15][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:07:16][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:07:16][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:07:16][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1180 ms
+ [INFO] [2016-06-23 10:07:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:07:16][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:07:16 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:07:16][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:07:17][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:07:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:07:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:07:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:07:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:07:17][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1080 ms
+ [INFO] [2016-06-23 10:19:05][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:07:16 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:19:05][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:07:15 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:19:15][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:19:15][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:19:15 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:19:15][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:19:16][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:19:16][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:19:16][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1852 ms
+ [INFO] [2016-06-23 10:19:17][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:19:17][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:19:17 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:19:17][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:19:17][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:19:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:19:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:19:18][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:19:18][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:19:18][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1346 ms
+ [INFO] [2016-06-23 10:19:32][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+ [INFO] [2016-06-23 10:19:32][org.springframework.jdbc.support.SQLErrorCodesFactory]SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+ [INFO] [2016-06-23 10:20:38][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:20:38][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:20:38 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:20:38][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:20:39][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:20:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:20:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1885 ms
+ [INFO] [2016-06-23 10:20:40][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:20:40][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:20:40 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:20:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:20:41][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:20:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:20:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:20:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:20:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:20:43][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 2332 ms
+ [INFO] [2016-06-23 10:39:57][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:39:57][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:39:57 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:39:57][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:39:57][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:39:58][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:39:58][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1203 ms
+ [INFO] [2016-06-23 10:39:58][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:39:58][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:39:58 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:39:58][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:39:58][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:39:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:39:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:40:00][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:40:00][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:40:00][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1689 ms
+ [INFO] [2016-06-23 10:45:02][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:39:58 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:45:02][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:39:57 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:45:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:45:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:45:06 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:45:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:45:06][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:45:06][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:45:07][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 848 ms
+ [INFO] [2016-06-23 10:45:07][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:45:07][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:45:07 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:45:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:45:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:45:07][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:45:07][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:45:08][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:45:08][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:45:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 963 ms
+ [INFO] [2016-06-23 10:45:28][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:45:07 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:45:28][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Thu Jun 23 10:45:06 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:45:34][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:45:34][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:45:34 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:45:34][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:45:34][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:45:34][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:45:34][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 827 ms
+ [INFO] [2016-06-23 10:45:34][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:45:34][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:45:34 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:45:34][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:45:35][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:45:35][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:45:35][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:45:35][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:45:35][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:45:35][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 847 ms
+ [INFO] [2016-06-23 10:46:01][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:46:01][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:46:01 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:46:01][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:46:02][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:46:02][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:46:02][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1488 ms
+ [INFO] [2016-06-23 10:46:02][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:46:02][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:46:02 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:46:02][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:46:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:46:03][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:46:03][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:46:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:46:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:46:04][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1591 ms
+ [INFO] [2016-06-23 10:47:46][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:47:47][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:47:47 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:47:47][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:47:47][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:47:47][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:47:48][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1511 ms
+ [INFO] [2016-06-23 10:47:48][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:47:48][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:47:48 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:47:48][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:47:48][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:47:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:47:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:47:50][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:47:50][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:47:50][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1673 ms
+ [INFO] [2016-06-23 10:53:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:53:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:53:39 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:53:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:53:39][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:53:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:53:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1444 ms
+ [INFO] [2016-06-23 10:53:40][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:53:40][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:53:40 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:53:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:53:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:53:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:53:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:53:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:53:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:53:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1569 ms
+ [INFO] [2016-06-23 10:55:26][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:55:26][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:55:26 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:55:26][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:55:27][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:55:27][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:55:28][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1928 ms
+ [INFO] [2016-06-23 10:55:28][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:55:28][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:55:28 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:55:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:55:29][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:55:29][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:55:29][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:55:30][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:55:30][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:55:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1898 ms
+ [INFO] [2016-06-23 10:56:03][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:56:03][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:56:03 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:56:03][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:56:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:56:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:56:04][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1665 ms
+ [INFO] [2016-06-23 10:56:04][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:56:04][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:56:04 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:56:04][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:56:05][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:56:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:56:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:56:06][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:56:06][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:56:06][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1523 ms
+ [INFO] [2016-06-23 10:56:45][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:56:45][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:56:45 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:56:46][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:56:46][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:56:46][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:56:47][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2009 ms
+ [INFO] [2016-06-23 10:56:48][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:56:48][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:56:48 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:56:48][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:56:48][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:56:48][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:56:48][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:56:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:56:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:56:49][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1839 ms
+ [INFO] [2016-06-23 10:57:54][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:57:54][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:57:54 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:57:54][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:57:55][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:57:55][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:57:55][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1468 ms
+ [INFO] [2016-06-23 10:57:55][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:57:55][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:57:55 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:57:55][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:57:56][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:57:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:57:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:57:57][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:57:57][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:57:57][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1596 ms
+ [INFO] [2016-06-23 10:59:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 10:59:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 10:59:14 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 10:59:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 10:59:15][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 10:59:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:59:16][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2107 ms
+ [INFO] [2016-06-23 10:59:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 10:59:16][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 10:59:16 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 10:59:16][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 10:59:16][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 10:59:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 10:59:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 10:59:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 10:59:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 10:59:18][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1601 ms
+ [INFO] [2016-06-23 11:02:34][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:02:34][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:02:34 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:02:34][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:02:35][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:02:35][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:02:35][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1660 ms
+ [INFO] [2016-06-23 11:02:35][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:02:35][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:02:35 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:02:35][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:02:36][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:02:36][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:02:36][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:02:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:02:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:02:37][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1527 ms
+ [INFO] [2016-06-23 11:05:01][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:05:02][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:05:02 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:05:02][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:05:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:05:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:05:03][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1712 ms
+ [INFO] [2016-06-23 11:05:03][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:05:03][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:05:03 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:05:03][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:05:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:05:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:05:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:05:05][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:05:05][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:05:05][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1738 ms
+ [INFO] [2016-06-23 11:06:51][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:06:51][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:06:51 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:06:51][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:06:52][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:06:52][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:06:53][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1857 ms
+ [INFO] [2016-06-23 11:06:53][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:06:53][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:06:53 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:06:53][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:06:53][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:06:54][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:06:54][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:06:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:06:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:06:55][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1898 ms
+ [INFO] [2016-06-23 11:11:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:11:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:11:12 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:11:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:11:13][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:11:13][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:11:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1520 ms
+ [INFO] [2016-06-23 11:11:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:11:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:11:14 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:11:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:11:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:11:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:11:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:11:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:11:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:11:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1559 ms
+ [INFO] [2016-06-23 11:21:21][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:21:22][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:21:22 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:21:22][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:21:22][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:21:22][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:21:23][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1528 ms
+ [INFO] [2016-06-23 11:21:23][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:21:23][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:21:23 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:21:23][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:21:23][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:21:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:21:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:21:25][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:21:25][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:21:25][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1765 ms
+ [INFO] [2016-06-23 11:22:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:22:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:22:39 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:22:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:22:40][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:22:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:22:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1530 ms
+ [INFO] [2016-06-23 11:22:40][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:22:40][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:22:40 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:22:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:22:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:22:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:22:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:22:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:22:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:22:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1630 ms
+ [DEBUG] [2016-06-23 11:22:53][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 11:22:53][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 11:22:54][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
+ [INFO] [2016-06-23 11:24:08][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 11:24:08][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 11:24:08 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 11:24:08][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 11:24:09][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 11:24:09][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:24:09][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1340 ms
+ [INFO] [2016-06-23 11:24:09][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 11:24:09][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 11:24:09 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 11:24:09][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 11:24:10][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 11:24:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 11:24:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 11:24:11][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 11:24:11][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 11:24:11][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1468 ms
+ [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
  
