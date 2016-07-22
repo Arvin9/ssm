@@ -9377,4 +9377,1054 @@ Caused by: java.lang.ClassNotFoundException: com.github.zhangkaitao.shiro.chapte
  [DEBUG] [2016-07-22 17:06:59][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
  [DEBUG] [2016-07-22 17:06:59][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
  [DEBUG] [2016-07-22 17:06:59][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 1335
+ [INFO] [2016-07-22 17:09:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:09:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:09:06 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:09:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:09:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:09:07][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:09:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:09:07][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:09:07][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1310 ms
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:09:08 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:09:08][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:09:08][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:09:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 719 ms
+ [INFO] [2016-07-22 17:09:09][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:09:15][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Enabling session validation scheduler...
+ [INFO] [2016-07-22 17:09:15][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: qtp832947102-21
+ [INFO] [2016-07-22 17:09:15][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:09:15][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:09:15][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:09:15][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:09:15][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:09:15][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ [INFO] [2016-07-22 17:09:15][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
+ [INFO] [2016-07-22 17:09:15][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-07-22 17:09:15][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-07-22 17:10:45][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:10:45][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:10:45 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:10:45][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:10:45][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:10:45][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:10:45][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:10:46][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1377 ms
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:10:46 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:10:46][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:10:46][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:10:46][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:10:47][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:10:47][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:10:47][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 787 ms
+ [INFO] [2016-07-22 17:10:48][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:10:56][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Enabling session validation scheduler...
+ [INFO] [2016-07-22 17:10:56][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: qtp832947102-21
+ [INFO] [2016-07-22 17:10:56][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:10:56][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:10:56][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:10:56][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:10:56][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:10:56][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ [INFO] [2016-07-22 17:10:56][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
+ [INFO] [2016-07-22 17:10:56][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-07-22 17:10:56][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-07-22 17:11:38][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:11:38][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:11:38 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:11:38][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:11:38][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:11:39][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:11:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:11:39][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:11:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1544 ms
+ [INFO] [2016-07-22 17:11:39][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:11:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:11:39 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:11:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:11:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:11:40][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 770 ms
+ [INFO] [2016-07-22 17:11:41][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:12:04][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:12:04][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:12:04 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:12:04][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:12:04][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:12:05][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:12:05][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:12:05][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1273 ms
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:12:05 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:12:05][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:12:05][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:12:05][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:12:06][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:12:06][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:12:06][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 826 ms
+ [INFO] [2016-07-22 17:12:07][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:12:13][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Enabling session validation scheduler...
+ [INFO] [2016-07-22 17:12:13][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: qtp832947102-22
+ [INFO] [2016-07-22 17:12:13][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:12:13][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:12:13][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:12:13][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:12:13][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:12:13][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ [INFO] [2016-07-22 17:12:13][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
+ [INFO] [2016-07-22 17:12:13][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-07-22 17:12:13][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-07-22 17:14:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:14:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:14:39 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:14:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:14:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:14:40][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:14:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:14:40][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:14:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1524 ms
+ [INFO] [2016-07-22 17:14:40][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:14:40][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:14:40 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:14:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:14:41][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:14:41][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 882 ms
+ [INFO] [2016-07-22 17:14:43][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:14:49][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Enabling session validation scheduler...
+ [INFO] [2016-07-22 17:14:49][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: qtp832947102-25
+ [INFO] [2016-07-22 17:14:49][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:14:49][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:14:49][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:14:49][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:14:49][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:14:49][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ [INFO] [2016-07-22 17:14:49][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
+ [INFO] [2016-07-22 17:14:49][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-07-22 17:14:49][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-07-22 17:22:09][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:22:09][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:22:09 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:22:09][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:22:09][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:22:10][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:22:10][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:22:10][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:22:10][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1243 ms
+ [INFO] [2016-07-22 17:22:10][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:22:10][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:22:10 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:22:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:22:10][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 74 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 74; columnNumber: 100; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'bean' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 74; columnNumber: 100; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'bean' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:22:12][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:24:23][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jul 22 17:22:09 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:24:23][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: Scanner-0
+ [INFO] [2016-07-22 17:24:23][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:24:23][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:24:23][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:24:23][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:24:23][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:24:23][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ [INFO] [2016-07-22 17:24:23][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ [INFO] [2016-07-22 17:24:23][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ [INFO] [2016-07-22 17:24:23][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Disabled session validation scheduler.
+ [INFO] [2016-07-22 17:24:26][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:24:26][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:24:26 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:24:26][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:24:26][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:24:26][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:24:26][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:24:27][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#7202a5a1' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#7202a5a1' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:27][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 930 ms
+ [INFO] [2016-07-22 17:24:27][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:24:27][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:24:27 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:24:27][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:24:27][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.scanner.RJRFileChangeListener.filesChanged(RJRFileChangeListener.java:155)
+	at org.eclipse.jetty.util.Scanner.reportBulkChanges(Scanner.java:680)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:546)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:398)
+	at org.eclipse.jetty.util.Scanner$1.run(Scanner.java:348)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 33 more
+[INFO] [2016-07-22 17:24:29][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:24:41][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:24:41][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:24:41 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:24:41][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:24:41][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:24:42][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:24:42][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:24:42][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:24:42][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1343 ms
+ [INFO] [2016-07-22 17:24:43][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:24:43][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:24:43 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:24:43][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:24:43][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:25:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:25:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:25:12 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:25:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:25:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:25:13][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:25:13][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:25:13][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1334 ms
+ [INFO] [2016-07-22 17:25:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:25:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:25:14 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:25:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:25:14][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:25:16][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:25:40][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jul 22 17:25:12 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:25:40][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: Scanner-0
+ [INFO] [2016-07-22 17:25:40][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:25:40][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:25:40][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:25:40][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:25:40][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:25:40][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+ [INFO] [2016-07-22 17:25:40][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+ [INFO] [2016-07-22 17:25:40][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+ [INFO] [2016-07-22 17:25:40][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Disabled session validation scheduler.
+ [INFO] [2016-07-22 17:25:43][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:25:43][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:25:43 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:25:43][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:25:43][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:25:44][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:25:44][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:25:44][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#612ddfa8' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#612ddfa8' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:44][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 901 ms
+ [INFO] [2016-07-22 17:25:44][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:25:44][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:25:44 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:25:44][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:25:44][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.scanner.RJRFileChangeListener.filesChanged(RJRFileChangeListener.java:155)
+	at org.eclipse.jetty.util.Scanner.reportBulkChanges(Scanner.java:680)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:546)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:398)
+	at org.eclipse.jetty.util.Scanner$1.run(Scanner.java:348)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 33 more
+[INFO] [2016-07-22 17:25:48][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:25:48][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:25:48 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:25:48][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:25:49][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:25:49][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:25:49][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:49][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:25:49][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:25:49][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:50][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:50][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:50][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:25:50][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1261 ms
+ [INFO] [2016-07-22 17:25:50][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:25:50][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:25:50 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:25:50][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:25:50][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:25:52][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:26:11][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:26:11][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:26:11 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:26:11][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:26:11][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:26:12][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:26:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:26:12][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1234 ms
+ [INFO] [2016-07-22 17:26:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:26:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:26:12 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:26:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:26:12][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 69 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 69; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:26:14][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:26:44][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:26:44][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:26:44 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:26:44][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:26:44][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:26:45][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:26:45][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:26:45][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:26:45][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1193 ms
+ [INFO] [2016-07-22 17:26:45][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:26:45][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:26:45 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:26:45][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [ERROR] [2016-07-22 17:26:45][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 68 in XML document from class path resource [spring-mvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 68; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:242)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:456)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:276)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:776)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:255)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1212)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:610)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:453)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:80)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 68; columnNumber: 65; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'property' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2016-07-22 17:26:47][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:27:13][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-07-22 17:27:13][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jul 22 17:27:13 CST 2016]; root of context hierarchy
+ [INFO] [2016-07-22 17:27:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-07-22 17:27:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-shiro-web.xml]
+ [INFO] [2016-07-22 17:27:13][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-07-22 17:27:13][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:27:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userDao' of type [class com.sun.proxy.$Proxy13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userService' of type [class site.nebulas.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'cacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [passwordRetryCache]
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'credentialsMatcher' of type [class site.nebulas.credentials.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.apache.shiro.realm.AuthorizingRealm]No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'userRealm' of type [class site.nebulas.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionValidationScheduler' of type [class org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdGenerator' of type [class org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionDAO' of type [class org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionIdCookie' of type [class org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'sessionManager' of type [class org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authenticationCache]
+ [INFO] [2016-07-22 17:27:14][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [authorizationCache]
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'formAuthenticationFilter' of type [class org.apache.shiro.web.filter.authc.FormAuthenticationFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'util:map#6cb194f5' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1335 ms
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Jul 22 17:27:14 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-07-22 17:27:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-07-22 17:27:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.index()
+ [INFO] [2016-07-22 17:27:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.ShiroController.login()
+ [INFO] [2016-07-22 17:27:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-07-22 17:27:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-07-22 17:27:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1161 ms
+ [INFO] [2016-07-22 17:27:16][net.sf.ehcache.util.UpdateChecker]New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+ [INFO] [2016-07-22 17:27:25][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Enabling session validation scheduler...
+ [INFO] [2016-07-22 17:27:25][org.quartz.simpl.SimpleThreadPool]Job execution threads will use class loader of thread: qtp832947102-24
+ [INFO] [2016-07-22 17:27:25][org.quartz.core.SchedulerSignalerImpl]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ [INFO] [2016-07-22 17:27:25][org.quartz.core.QuartzScheduler]Quartz Scheduler v.1.6.1 created.
+ [INFO] [2016-07-22 17:27:25][org.quartz.simpl.RAMJobStore]RAMJobStore initialized.
+ [INFO] [2016-07-22 17:27:25][org.quartz.impl.StdSchedulerFactory]Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ [INFO] [2016-07-22 17:27:25][org.quartz.impl.StdSchedulerFactory]Quartz scheduler version: 1.6.1
+ [INFO] [2016-07-22 17:27:25][org.quartz.core.QuartzScheduler]Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ [INFO] [2016-07-22 17:27:25][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
+ [INFO] [2016-07-22 17:27:25][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-07-22 17:27:25][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [DEBUG] [2016-07-22 17:41:09][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-07-22 17:41:09][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-07-22 17:41:09][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 1335
  
