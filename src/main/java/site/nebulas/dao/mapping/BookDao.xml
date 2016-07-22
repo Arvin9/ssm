@@ -12,7 +12,6 @@
 			book_concern bookConcern,
 			book_edition bookEdition,
 			book_price bookPrice
-			
 		from book
 	</select>
 	
