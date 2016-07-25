@@ -2,7 +2,7 @@
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <html>
 <head>
-    <title></title>
+    <title>success</title>
 </head>
 <body>
      <shiro:hasAnyRoles name="admin">
