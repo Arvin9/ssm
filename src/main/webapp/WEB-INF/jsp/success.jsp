@@ -5,6 +5,7 @@
     <title>success</title>
 </head>
 <body>
+	${subject.principal}身份验证已通过。
      <shiro:hasAnyRoles name="admin">
          <shiro:principal/>拥有角色admin
      </shiro:hasAnyRoles>
