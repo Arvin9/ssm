@@ -15,7 +15,7 @@
     <bean id="credentialsMatcher" class="site.nebulas.credentials.RetryLimitHashedCredentialsMatcher">
         <constructor-arg ref="cacheManager"/>
         <property name="hashAlgorithmName" value="md5"/>
-        <property name="hashIterations" value="2"/>
+        <property name="hashIterations" value="1"/>
         <property name="storedCredentialsHexEncoded" value="true"/>
     </bean>
 
@@ -87,7 +87,7 @@
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="/login"/>
-        <property name="unauthorizedUrl" value="/unauthorized.jsp"/>
+        <property name="unauthorizedUrl" value="/unauthorized"/>
         <property name="filters">
             <util:map>
                 <entry key="authc" value-ref="formAuthenticationFilter"/>
@@ -96,6 +96,7 @@
         <property name="filterChainDefinitions">
             <value>
                 /index = anon
+                /lo = anon
                 /book* = anon
                 /resources/** = anon
                 /unauthorized = anon
