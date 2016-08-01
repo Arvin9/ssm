@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.nebulas.dao.MenuDao">
+
+	<select id="getMenuByParm" resultType="java.util.Map">
+		select 
+			id id,
+			menu_id menuId,
+			menu_name menuName,
+			parent_id parentId,
+			menu_url menuUrl,
+			available
+		from menu_info  
+		ORDER BY id ASC
+	</select>
+	
+	<select id="getManageByParm" resultType="java.util.Map">
+		select 
+			m.m_id mId,
+			m.role_id roleId,
+			m.manager_account managerAccount,
+			m.password password,
+			m.real_name realName,
+			m.add_time addTime,
+			m.is_lock isLock,
+			m.add_man addMan,
+			m.balance balance,
+			m.is_delete isDelete,
+			r.role_name roleName
+		from manager m
+		left join role_info r
+		on m.role_id = r.role_id
+		<where>
+			<if test="managerAccount != null and managerAccount != ''">
+				m.manager_account = #{managerAccount}
+			</if>
+		</where>  
+		ORDER BY m.m_id ASC
+	</select>
+	
+	<select id="getRoleByParm" resultType="java.util.Map">
+		select 
+			role_id roleId,
+			role_name roleName,
+			add_time addTime,
+			own_menus ownMenus,
+			add_man addMan
+		from role_info m
+		<where>
+			<if test="roleId != null and roleId != ''">
+				role_id = #{roleId}
+			</if>
+		</where>
+		ORDER BY role_id ASC
+	</select>
+	
+	
+	
+	<update id="updateRole">
+		update role_info
+		<set>
+			<if test="roleName != null and roleName != ''">
+				role_name = #{roleName},
+			</if>
+			<if test="addTime !=null and addTime !='' ">
+				add_time = #{addTime}
+			</if>
+			<if test="ownMenus !=null">
+				own_menus = #{ownMenus}
+			</if>
+			<if test="addMan !=null and addMan !='' ">
+				add_man = #{addMan}
+			</if>
+		</set>
+		where role_id = #{roleId}
+	</update>
+	
+	<insert id="insertRole">
+		insert into role_info (role_name,add_time,own_menus,add_man) 
+		values (#{roleName},#{addTime},#{ownMenus},#{addMan})
+	</insert>
+	
+	
+	
+	<insert id="insertManage">
+		insert into manager (role_id,manager_account,real_name,add_time,is_lock,add_man,balance,is_delete) 
+		values (#{roleId},#{managerAccount},#{realName},#{addTime},#{isLock},#{addMan},#{balance},#{isDelete})
+	</insert>
+	
+	<update id="updateManage">
+		update manager
+		<set>
+			<if test="roleId != null and roleId != ''">
+				role_id = #{roleId},
+			</if>
+			<if test="managerAccount !=null and managerAccount !='' ">
+				manager_account = #{managerAccount},
+			</if>
+			<if test="realName !=null and realName !='' ">
+				real_name = #{realName},
+			</if>
+			<if test="addTime !=null and addTime !='' ">
+				add_time = #{addTime},
+			</if>
+			<if test="isLock !=null">
+				is_lock = #{isLock},
+			</if>
+			<if test="addMan !=null and addMan !='' ">
+				add_man = #{addMan},
+			</if>
+			<if test="balance !=null and balance !='' ">
+				balance = #{balance},
+			</if><if test="isDelete !=null">
+				is_delete = #{isDelete}
+			</if>
+		</set>
+		where m_id = #{mId}
+	</update>
+	
+	<update id="updateMenu">
+		update menu_info
+		<set>
+			<if test="menuId != null and menuId != ''">
+				menu_id = #{menuId},
+			</if>
+			<if test="menuName !=null and menuName !='' ">
+				menu_name = #{menuName},
+			</if>
+			<if test="parentId !=null and parentId !='' ">
+				parent_id = #{parentId},
+			</if>
+			<if test="menuUrl !=null and menuUrl !='' ">
+				menu_url = #{menuUrl},
+			</if>
+			<if test="available !=null">
+				available = #{available}
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<insert id="insertMenu">
+		insert into menu_info (menu_id,menu_name,parent_id,menu_url,available) 
+		values (#{menuId},#{menuName},#{menuName},#{menuUrl},#{available})
+	</insert>
+	
+	
+</mapper>

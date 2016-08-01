@@ -6,6 +6,7 @@ import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.stereotype.Service;
 
+import site.nebulas.beans.Manager;
 import site.nebulas.beans.User;
 
 /**
@@ -32,16 +33,16 @@ public class PasswordHelper {
         this.hashIterations = hashIterations;
     }
 
-    public void encryptPassword(User user) {
+    public void encryptPassword(Manager manager) {
 
-        user.setSalt(randomNumberGenerator.nextBytes().toHex());
+    	manager.setSalt(randomNumberGenerator.nextBytes().toHex());
 
         String newPassword = new SimpleHash(
                 algorithmName,
-                user.getPassword(),
-                ByteSource.Util.bytes(user.getCredentialsSalt()),
+                manager.getPassword(),
+                ByteSource.Util.bytes(manager.getCredentialsSalt()),
                 hashIterations).toHex();
 
-        user.setPassword(newPassword);
+        manager.setPassword(newPassword);
     }
 }

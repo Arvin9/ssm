@@ -14,21 +14,23 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import site.nebulas.beans.Manager;
 import site.nebulas.beans.User;
-import site.nebulas.service.UserService;
+import site.nebulas.service.ManagerService;
 
 
 @Controller
 public class ShiroController {
 	Logger log=LoggerFactory.getLogger(getClass());
 	@Resource
-	UserService userService;
+	ManagerService managerService;
 
 	@RequestMapping("index")
 	public ModelAndView index(){
@@ -41,47 +43,48 @@ public class ShiroController {
 		return modelAndView;
 	}
 	@RequestMapping("login")
-	public String loginIn(HttpServletRequest request,Model model,User user){
-		String username=user.getUsername();
-		String password=user.getPassword();
+	public String loginIn(Model model,Manager manager){
+		String managerAccount = manager.getManagerAccount();
+		String password = manager.getPassword();
 		
-		if(username != null && password != null){
-			UsernamePasswordToken token = new UsernamePasswordToken(username,password);
-			HttpSession session=request.getSession();
+		System.out.println(managerAccount + " " + password);
+		
+		if(managerAccount != null && password != null){
+			UsernamePasswordToken token = new UsernamePasswordToken(managerAccount,password);
+//			HttpSession session=request.getSession();
 			//session.setAttribute("current",username);
 			Subject subject = SecurityUtils.getSubject();
 			try {
 				 subject.login(token);
-				 //user.setUserName(username);
-				 //userser.selectUser(user);
+				 Integer roleId = managerService.findByManagerAccount(managerAccount).getRoleId();
+				 System.out.println(roleId);
+				 model.addAttribute("roleId", roleId);
 //				 System.out.println("用户是否是通过验证登陆："+subject.isAuthenticated());
 //				 System.out.println("用户是否是通过记住我登陆："+subject.isRemembered());
 			}catch(UnknownAccountException uae){
-	            System.out.println("对用户[" + username + "]进行登录验证..验证未通过,未知账户");  
-	            request.setAttribute("message_login", "未知账户");  
+	            System.out.println("对用户[" + managerAccount + "]进行登录验证..验证未通过,未知账户");  
+	            model.addAttribute("message", "no");
 	            return "login";
 	        }catch(IncorrectCredentialsException ice){  
-	            System.out.println("对用户[" + username + "]进行登录验证..验证未通过,错误的凭证");  
-	            request.setAttribute("message_login", "密码不正确"); 
+	            System.out.println("对用户[" + managerAccount + "]进行登录验证..验证未通过,错误的凭证");  
+	            model.addAttribute("message", "error");
 	            return "login";
 	        }catch(LockedAccountException lae){  
-	            System.out.println("对用户[" + username + "]进行登录验证..验证未通过,账户已锁定");  
-	            request.setAttribute("message_login", "账户已锁定");  
+	            System.out.println("对用户[" + managerAccount + "]进行登录验证..验证未通过,账户已锁定");  
+//	            request.setAttribute("message_login", "账户已锁定");  
 	            return "login";
 	        }catch(ExcessiveAttemptsException eae){  
-	            System.out.println("对用户[" + username + "]进行登录验证..验证未通过,错误次数过多");  
-	            request.setAttribute("message_login", "用户名或密码错误次数过多");  
+	            System.out.println("对用户[" + managerAccount + "]进行登录验证..验证未通过,错误次数过多");
+	            model.addAttribute("message", "error");
 	            return "login";
 	        }catch(AuthenticationException ae){  
 	            //通过处理Shiro的运行时AuthenticationException就可以控制用户登录失败或密码错误时的情景  
-	            System.out.println("对用户[" + username + "]进行登录验证..验证未通过,堆栈轨迹如下");  
-	            ae.printStackTrace();  
-	            request.setAttribute("message_login", "用户名或密码不正确");  
+	            System.out.println("对用户[" + managerAccount + "]进行登录验证..验证未通过,堆栈轨迹如下");  
+	            ae.printStackTrace(); 
+	            model.addAttribute("message", "error");
 	            return "login";
 	        }  
-			 
-			System.out.println("success");
-			return "success";
+			return "menu";
 		}
 		
 		return "login";
