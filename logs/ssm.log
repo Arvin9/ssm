@@ -16842,4 +16842,36 @@ public java.lang.String site.nebulas.controller.menuController.login(org.springf
  [INFO] [2016-08-01 13:53:10][org.apache.shiro.cache.ehcache.EhCacheManager]Using existing EHCache named [shiro-activeSessionCache]
  [INFO] [2016-08-01 13:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
  [INFO] [2016-08-01 13:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 14:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 14:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 14:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 14:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  [1] sessions were stopped.
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==>  Preparing: select m_id mId, role_id roleId, manager_account managerAccount, password password, salt salt, real_name realName, add_time addTime, is_lock isLock, add_man addMan, balance balance, is_delete isDelete from manager where manager_account = ? 
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==> Parameters: null
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]<==      Total: 0
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==>  Preparing: select m_id mId, role_id roleId, manager_account managerAccount, password password, salt salt, real_name realName, add_time addTime, is_lock isLock, add_man addMan, balance balance, is_delete isDelete from manager where manager_account = ? 
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==> Parameters: nebula(String)
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]<==      Total: 1
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==>  Preparing: select m_id mId, role_id roleId, manager_account managerAccount, password password, salt salt, real_name realName, add_time addTime, is_lock isLock, add_man addMan, balance balance, is_delete isDelete from manager where manager_account = ? 
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]==> Parameters: nebula(String)
+ [DEBUG] [2016-08-01 14:53:36][site.nebulas.dao.ManagerDao.findByManagerAccount]<==      Total: 1
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getMenuByParm]==>  Preparing: select id id, menu_id menuId, menu_name menuName, parent_id parentId, menu_url menuUrl, available from menu_info ORDER BY id ASC 
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getMenuByParm]==> Parameters: 
+ [WARN] [2016-08-01 14:53:37][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'SpringMVC'
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getMenuByParm]<==      Total: 21
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getRoleByParm]==>  Preparing: select role_id roleId, role_name roleName, add_time addTime, own_menus ownMenus, add_man addMan from role_info m WHERE role_id = ? ORDER BY role_id ASC 
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getRoleByParm]==> Parameters: 10000(Integer)
+ [DEBUG] [2016-08-01 14:53:37][site.nebulas.dao.MenuDao.getRoleByParm]<==      Total: 1
+ [INFO] [2016-08-01 15:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 15:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 15:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 15:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  [1] sessions were stopped.
+ [INFO] [2016-08-01 16:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 16:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 16:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 16:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 17:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 17:23:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
+ [INFO] [2016-08-01 17:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Validating all active sessions...
+ [INFO] [2016-08-01 17:53:10][org.apache.shiro.session.mgt.AbstractValidatingSessionManager]Finished session validation.  No sessions were stopped.
  
