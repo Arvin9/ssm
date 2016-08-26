@@ -1,1 +1,8 @@
-/target/
+*target/
+*.settings/
+*.classpath
+*.project
+*README.md
+*.log*
+*_logs/
+*qrcodelink/
