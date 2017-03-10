@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.nebulas.dao.ManagerDao">
+
+
+	<select id="queryByParam" resultType="Manager">
+		select 
+			id id,
+			account account,
+			password password,
+			salt salt,
+			status_code statusCode,
+			nickname nickname,
+			role_id roleId,
+			add_time addTime
+		from manager
+		<where>
+			<if test="id != null">
+				id = #{id}
+			</if>
+			<if test="account != null and account != ''">
+				AND account = #{account}
+			</if>
+			<if test="statusCode != null">
+				AND status_code = #{statusCode}
+			</if>
+		</where>
+	</select>
+	
+	
+	<insert id="insert">
+		insert into manager (
+			account,
+			password,
+			salt,
+			status_code ,
+			nickname ,
+			role_id ,
+			add_time
+		) values (
+			#{account},
+			#{password},
+			#{salt},
+			#{statusCode},
+			#{nickname},
+			#{roleId},
+			#{addTime}
+		)
+	</insert>
+	
+	<update id="update">
+		update manager
+		<set>
+			<if test="account != null and account != '' ">
+				account = #{account},
+			</if>
+			<if test="password != null and password != '' ">
+				password = #{password},
+			</if>
+			<if test="salt != null and salt != '' ">
+				salt = #{salt},
+			</if>
+			<if test="statusCode != null">
+				status_code = #{statusCode},
+			</if>
+			<if test="nickname != null and nickname != ''">
+				nickname = #{nickname},
+			</if>
+			<if test="roleId != null">
+				role_id = #{roleId},
+			</if>
+			<if test="addTime != null and addTime != ''">
+				add_time = #{addTime},
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from manager
+		where id = #{id}
+	</delete>
+</mapper>
