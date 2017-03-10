@@ -10,8 +10,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:spring-mybatis.xml,
-            classpath:spring-shiro-web.xml
+			classpath:spring-mybatis.xml
 		</param-value>
 	</context-param>
 	<!-- Spring监听器 -->
@@ -40,32 +39,6 @@
 	</filter-mapping>
 	<!-- 编码过滤器结束 -->
 	
-	<!-- shiro 安全过滤器 开始 -->
-    <!-- The filter-name matches name of a 'shiroFilter' bean inside applicationContext.xml -->
-    <!-- 配置Shiro过滤器,先让Shiro过滤系统接收到的请求 -->  
-	<!-- 这里filter-name必须对应applicationContext.xml中定义的<bean id="shiroFilter"/> -->  
-	<!-- 使用[/*]匹配所有请求,保证所有的可控请求都经过Shiro的过滤 -->  
-	<!-- 通常会将此filter-mapping放置到最前面(即其他filter-mapping前面),以保证它是过滤器链中第一个起作用的 -->  
-    <filter>
-        <filter-name>shiroFilter</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-        <async-supported>true</async-supported>
-        <init-param>
-        	<!-- 该值缺省为false,表示生命周期由SpringApplicationContext管理,设置为true则表示由ServletContainer管理 --> 
-            <param-name>targetFilterLifecycle</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-
-    <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
-    <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
-    <!-- ensure that Shiro works in subsequent filters in the filter chain:             -->
-    <filter-mapping>
-        <filter-name>shiroFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-	<!-- shiro 安全过滤器 结束 -->
-	
 	<!-- Spring MVC servlet 开始-->
 	<servlet>
 		<servlet-name>SpringMVC</servlet-name>
@@ -83,9 +56,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	<!-- Spring MVC servlet 结束-->
-	
 
-	
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>

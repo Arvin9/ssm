@@ -1,93 +1,76 @@
 package site.nebulas.beans;
 
 public class Manager {
-	private Integer mId;
-	private Integer roleId;
-	private String roleName;
-	private String managerAccount;
+	private Integer id;
+	private String account;
 	private String password;
 	private String salt;
-	private String realName;
+	private Integer statusCode;
+	private String nickname;
+	private Integer roleId;
 	private String addTime;
-	private Integer isLock;
-	private String addMan;
-	private Double balance;
-	private Integer isDelete;
-	public Integer getmId() {
-		return mId;
+
+	public Integer getId() {
+		return id;
 	}
-	public void setmId(Integer mId) {
-		this.mId = mId;
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
-	public Integer getRoleId() {
-		return roleId;
+
+	public String getAccount() {
+		return account;
 	}
-	public void setRoleId(Integer roleId) {
-		this.roleId = roleId;
+
+	public void setAccount(String account) {
+		this.account = account;
 	}
-	public String getRoleName() {
-		return roleName;
-	}
-	public void setRoleName(String roleName) {
-		this.roleName = roleName;
-	}
-	public String getManagerAccount() {
-		return managerAccount;
-	}
-	public void setManagerAccount(String managerAccount) {
-		this.managerAccount = managerAccount;
-	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getSalt() {
 		return salt;
 	}
+
 	public void setSalt(String salt) {
 		this.salt = salt;
 	}
-	public String getRealName() {
-		return realName;
+
+	public Integer getStatusCode() {
+		return statusCode;
 	}
-	public void setRealName(String realName) {
-		this.realName = realName;
+
+	public void setStatusCode(Integer statusCode) {
+		this.statusCode = statusCode;
 	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public Integer getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
+	}
+
 	public String getAddTime() {
 		return addTime;
 	}
+
 	public void setAddTime(String addTime) {
 		this.addTime = addTime;
 	}
-	public Integer getIsLock() {
-		return isLock;
-	}
-	public void setIsLock(Integer isLock) {
-		this.isLock = isLock;
-	}
-	public String getAddMan() {
-		return addMan;
-	}
-	public void setAddMan(String addMan) {
-		this.addMan = addMan;
-	}
-	public Double getBalance() {
-		return balance;
-	}
-	public void setBalance(Double balance) {
-		this.balance = balance;
-	}
-	public Integer getIsDelete() {
-		return isDelete;
-	}
-	public void setIsDelete(Integer isDelete) {
-		this.isDelete = isDelete;
-	}
-	
-	public String getCredentialsSalt() {
-        return managerAccount + salt;
-    }
-	
 }

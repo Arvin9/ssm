@@ -20,10 +20,10 @@
   
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  
         destroy-method="close">  
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />  
-        <property name="url" value="jdbc:mysql://115.159.86.92:3306/ssm" />  
-        <property name="username" value="nebula" />  
-        <property name="password" value="314159" />  
+        <property name="driverClassName" value="${mysql.driver}" />
+        <property name="url" value="${mysql.url}" />
+        <property name="username" value="${mysql.username}" />
+        <property name="password" value="${mysql.password}" />
         <!-- 初始化连接大小 -->  
         <property name="initialSize" value="0"></property>  
         <!-- 连接池最大数量 -->  

@@ -37,65 +37,6 @@ public class BookController {
 	public Object bookQueryByParam(Book book) {
 		return bookService.bookQueryByParam(book);
 	}
-	
-
-	
-
-	
-	/*
-	
-	@RequestMapping("addBook")
-	@ResponseBody
-	public Object addBook(Book book, @RequestParam("bookPicFile")MultipartFile bookPicFile, 
-			@RequestParam("uploadBookFile")MultipartFile uploadBookFile){
-		Response response = new Response();
-		try {
-			if (bookPicFile!=null&&!bookPicFile.isEmpty()) {
-				String fileName = bookPicFile.getOriginalFilename();
-				System.out.println("fileName:"+fileName);
-				String src = s3Service.upload(bookPicFile.getInputStream(),fileName);
-				System.out.println("src:"+src);
-				book.setBookPic(src);
-			}
-			if (uploadBookFile!=null&&!uploadBookFile.isEmpty()) {
-				String fileName = uploadBookFile.getOriginalFilename();
-				System.out.println("fileName:"+uploadBookFile);
-				String src = s3Service.upload(uploadBookFile.getInputStream(),fileName);
-				System.out.println("src:"+src);
-				book.setBookURL(src);
-			}
-			book.setUpdateTime(DateUtil.getDateTimeString(new Date()));
-			
-			bookService.insert(book);
-			OperationLog operationLog = new OperationLog();
-
-			operationLog.setAction("新增图书URL");
-			operationLog.setBody(new Gson().toJson(book));
-			OperLogUtil.writeLog(operationLog);
-		} catch (Exception e) {
-			logger.error("add book", e);
-			response.setRet(10000);
-		}		
-		return response;
-	}
-	
-	@RequestMapping("updateBook")
-	@ResponseBody
-	public Object updateBook(Book book){
-		Response response = new Response();
-		book.setUpdateTime(DateUtil.getDateTimeString(new Date()));
-		bookService.update(book);
-		return response;
-	}
-	
-	@RequestMapping("deleteBook")
-	@ResponseBody
-	public Object deleteBook(Book book){
-		Response response = new Response();
-		bookService.delete(book);
-		return response;
-	}
-	*/
 }
 
 
